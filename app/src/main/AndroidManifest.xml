@@ -9,8 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".WelcomeActivity"></activity>
-        <activity android:name=".MainMenuActivity" />
+        <activity android:name=".ui.WelcomeActivity"></activity>
+        <activity android:name=".ui.MainMenuActivity" />
         <activity
             android:name=".MainActivity"
             android:theme="@style/SplashScreen">
