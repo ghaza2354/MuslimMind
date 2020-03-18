@@ -12,7 +12,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.denzcoskun.imageslider.ImageSlider;
+import com.denzcoskun.imageslider.models.SlideModel;
 import com.mgadevelop.coba2.R;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainPageFragment extends Fragment {
 
@@ -25,7 +30,10 @@ public class MainPageFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.main_page_fragment, container, false);
+        View view = inflater.inflate(R.layout.main_page_fragment, container, false);
+
+
+        return view;
     }
 
     @Override

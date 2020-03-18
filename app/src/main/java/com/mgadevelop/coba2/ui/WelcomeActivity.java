@@ -47,21 +47,21 @@ public class WelcomeActivity extends AppCompatActivity {
 
 
         // when this activity is about to be launch we need to check if its openened before or not
-//
-//        if (restorePrefData()) {
-//
-//            Intent mainActivity = new Intent(getApplicationContext(), HomePageActivity.class );
-//            startActivity(mainActivity);
-//            finish();
-//
-//
-//        }
+
+        if (restorePrefData()) {
+
+            Intent mainActivity = new Intent(getApplicationContext(), HomePageActivity.class );
+            startActivity(mainActivity);
+            finish();
+
+
+        }
 
         setContentView(R.layout.activity_welcome);
 
         // hide the action bar
 
-        getSupportActionBar().hide();
+//        getSupportActionBar().hide();
 
         // ini views
         btnNext = findViewById(R.id.btn_next);
