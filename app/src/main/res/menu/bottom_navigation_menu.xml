@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/masjid"
+        android:icon="@drawable/ic_place_black_24dp"
+        android:title="Masjid Terdekat" />
+
+    <item android:id="@+id/adzan"
+        android:icon="@drawable/ic_access_time_black_24dp"
+        android:title="Jadwal Adzan" />
+
+    <item android:id="@+id/home_page"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Beranda" />
+
+    <item android:id="@+id/calendar_hijriah"
+        android:icon="@drawable/ic_date_range_black_24dp"
+        android:title="Kalender Hijriah" />
+
+    <item android:id="@+id/hadits"
+        android:icon="@drawable/ic_library_books_black_24dp"
+        android:title="Hadits Arbain" />
+
+</menu>
