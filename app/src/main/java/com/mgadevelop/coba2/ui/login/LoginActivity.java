@@ -41,7 +41,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 //                    .setConfirmText("Lanjut")
 //                    .setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
 //                        @Override
-//                        public void onClick(SweetAlertDialog sDialog) {
+//                        public void onClick(SweetAlertDialog sDialog {
                             Intent intentbahas = new Intent(LoginActivity.this, WelcomeActivity.class);
                             startActivity(intentbahas);
                                 savePrefsData();
