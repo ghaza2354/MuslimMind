@@ -48,15 +48,6 @@ public class WelcomeActivity extends AppCompatActivity {
 
         // when this activity is about to be launch we need to check if its openened before or not
 
-        if (restorePrefData()) {
-
-            Intent mainActivity = new Intent(getApplicationContext(), HomePageActivity.class );
-            startActivity(mainActivity);
-            finish();
-
-
-        }
-
         setContentView(R.layout.activity_welcome);
 
         // hide the action bar
@@ -73,9 +64,11 @@ public class WelcomeActivity extends AppCompatActivity {
         // fill list screen
 
         final List<ScreenItem> mList = new ArrayList<>();
-        mList.add(new ScreenItem("Jangan Lupa Sholat","Kami menyediakan pengingat dan jadwal adzan agar kamu tidak lupa sholat lagi, karena sholat itu penting lho! Inget sabda Rasulullah SAW dengan Sholat berarti kita bisa menghapus dosa dosa (kecil) kita!",R.drawable.img1));
-        mList.add(new ScreenItem("Mari Menghafal Quran","Kami juga menyediakan AlQuran AlKarim full 30 juz untuk kamu supaya bisa jadi hafizh, karena Rasulullah SAW bersabda Barangsiapa yang belajar dan mengajari Al-Quran, maka Allah akan permudah jalannya menuju surga",R.drawable.img2));
-        mList.add(new ScreenItem("Tips Ibadah","Kami juga memberikan tips ibadah seperti sholat, wudhu dan lain lainnua sesuai sunnah agar kamu tidak salah lagi, karena dengan ibadah sesuai dengan sunnah Rasulullah SAW maka itu akan mempermudah jalanmu menuju surganya Allah SWT",R.drawable.img3));
+        mList.add(new ScreenItem("Jangan Lupa Sholat","Kami menyediakan pengingat dan jadwal adzan agar kamu tidak lupa sholat lagi, karena sholat itu penting lho! Inget sabda Rasulullah ﷺ dengan Sholat berarti kita bisa menghapus dosa dosa (kecil) kita!",R.drawable.img1));
+        mList.add(new ScreenItem("Mari Menghafal Quran","Kami juga menyediakan AlQuran AlKarim full 30 juz untuk kamu supaya bisa jadi hafizh, karena Rasulullah ﷺ bersabda Barangsiapa yang belajar dan mengajari Al-Quran, maka Allah akan permudah jalannya menuju surga",R.drawable.img2));
+        mList.add(new ScreenItem("Tips Ibadah","Kami juga memberikan tips ibadah seperti sholat, wudhu dan lain lainnua sesuai sunnah agar kamu tidak salah lagi, karena dengan ibadah sesuai dengan sunnah Rasulullah ﷺ maka itu akan mempermudah jalanmu menuju surganya Allah ﷻ",R.drawable.img3));
+        mList.add(new ScreenItem("Amal Jariyah","Bagikan ini ke saudaramu yang sesama muslim agar kamu dan developer mendapat pahala jariyah seperti sabda Rasulullah ﷺ Semua amalan akan terputus ketika kita meninggal kecuali 3 hal, Sedekah jariyah, Ilmu yang bermanfaat dan Doa anak sholeh/ah kepada orang tuanya",R.drawable.img5));
+        mList.add(new ScreenItem("Semangat!","Insya Allah ini akan jadi salah satu sebab yang membuatmu masuk ke dalam surga dan amalan jariyyah bagi developer dan kamu yang membagikan aplikasi ini kepada sesama saudara muslim lainnya",R.drawable.img4));
 
         // setup viewpager
         screenPager =findViewById(R.id.screen_viewpager);
@@ -158,7 +151,6 @@ public class WelcomeActivity extends AppCompatActivity {
                 // also we need to save a boolean value to storage so next time when the user run the app
                 // we could know that he is already checked the intro screen activity
                 // i'm going to use shared preferences to that process
-                savePrefsData();
                 finish();
 
 
@@ -179,26 +171,6 @@ public class WelcomeActivity extends AppCompatActivity {
 
     }
 
-    private boolean restorePrefData() {
-
-
-        SharedPreferences pref = getApplicationContext().getSharedPreferences("myPrefs",MODE_PRIVATE);
-        Boolean isIntroActivityOpnendBefore = pref.getBoolean("isIntroOpnend",false);
-        return  isIntroActivityOpnendBefore;
-
-
-
-    }
-
-    private void savePrefsData() {
-
-        SharedPreferences pref = getApplicationContext().getSharedPreferences("myPrefs",MODE_PRIVATE);
-        SharedPreferences.Editor editor = pref.edit();
-        editor.putBoolean("isIntroOpnend",true);
-        editor.commit();
-
-
-    }
 
     // show the GETSTARTED Button and hide the indicator and the next button
     private void loaddLastScreen() {

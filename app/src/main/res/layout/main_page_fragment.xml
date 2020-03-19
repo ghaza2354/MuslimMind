@@ -58,6 +58,100 @@
 
         </RelativeLayout>
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+
+                <TextView android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="Subuh"/>
+
+                <TextView android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="Dzuhur"/>
+
+                <TextView android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="Ashar"/>
+
+                <TextView android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="Maghrib"/>
+
+                <TextView android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="Isya"/>
+
+            </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="10dp">
+
+                    <TextView android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:text="04.30"/>
+
+                    <TextView android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:text="12.00"/>
+
+                    <TextView android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:text="15.30"/>
+
+                    <TextView android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:text="16.15"/>
+
+                    <TextView android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:text="17.30"/>
+
+                </TableRow>
+
+            </TableLayout>
+
+        </RelativeLayout>
+
     </LinearLayout>
 
 </ScrollView>
