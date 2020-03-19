@@ -14,7 +14,7 @@
         android:title="Beranda" />
 
     <item android:id="@+id/calendar_hijriah"
-        android:icon="@drawable/qurank"
+        android:icon="@drawable/dw"
         android:title="Alquran" />
 
     <item android:id="@+id/hadits"
