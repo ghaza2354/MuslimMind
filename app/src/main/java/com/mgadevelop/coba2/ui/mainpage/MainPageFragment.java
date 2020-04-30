@@ -89,7 +89,7 @@ public class MainPageFragment extends Fragment implements LocationListener {
 
     private void actionLoad() {
         ApiInterface apiInterface = ApiClient.getClient().create(ApiInterface.class);
-        Call<Items> call = apiInterface.getJadwalSholat("Jonggol");
+        Call<Items> call = apiInterface.getJadwalSholat("Jakarta");
         call.enqueue(new Callback<Items>() {
             @Override
             public void onResponse(Call<Items> call, Response<Items> response) {

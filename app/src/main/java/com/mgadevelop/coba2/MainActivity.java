@@ -12,7 +12,6 @@ import android.widget.ProgressBar;
 import android.widget.VideoView;
 
 import com.mgadevelop.coba2.ui.WelcomeActivity;
-import com.mgadevelop.coba2.ui.login.LoginActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent1=new Intent(MainActivity.this, LoginActivity.class);
+                Intent intent1=new Intent(MainActivity.this, WelcomeActivity.class);
                 startActivity(intent1);
                 finish();
             }
