@@ -66,18 +66,17 @@ public class MainPageFragment extends Fragment implements LocationListener {
     }
 
 //    public String currentLocation(double lat,double lon){
-//        String currentCity = "";
+//       String currentCity = "";
 //
-//        Geocoder geocoder = new Geocoder(MainPageFragment.this, Locale.getDefault());
+//        Geocoder geocoder = new Geocoder(getActivity(), Locale.getDefault());
 //        List<Address> addressList;
 //        try {
-//            addressList = geocoder.getFromLocation(lat,lon,1);
 //            if (addressList.size() > 0){
 //                currentCity = addressList.get(0).getLocality();
 //            }
 //        } catch (Exception e){
-//            e.printStackTrace();
-//        }
+//           e.printStackTrace();
+//       }
 //        return currentCity;
 //    }
 
