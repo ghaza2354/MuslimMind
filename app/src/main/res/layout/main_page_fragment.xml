@@ -62,7 +62,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="20dp">
 
             <TextView
@@ -78,7 +78,7 @@
                 android:id="@+id/location"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp">
+                android:layout_marginTop="25dp">
 
                 <TableRow
                     android:layout_marginTop="10dp">
@@ -120,7 +120,9 @@
 
                 </TableRow>
 
-                <TableRow>
+                <TableRow
+                    android:layout_marginTop="10dp"
+                    >
 
                 <TextView
                     android:id="@+id/jadwal_subuh"

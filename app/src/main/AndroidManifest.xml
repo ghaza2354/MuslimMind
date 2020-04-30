@@ -16,7 +16,6 @@
         android:theme="@style/AppTheme"
         tools:replace="android:icon"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ui.login.LoginActivity"/>
         <activity android:name=".ui.HomePageActivity" />
         <activity android:name=".ui.WelcomeActivity" />
         <activity android:name=".MainActivity">

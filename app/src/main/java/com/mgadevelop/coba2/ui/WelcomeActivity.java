@@ -19,6 +19,7 @@ import com.google.android.material.tabs.TabLayout;
 import com.mgadevelop.coba2.R;
 import com.mgadevelop.coba2.adapter.IntroViewPagerAdapter;
 import com.mgadevelop.coba2.item.ScreenItem;
+import com.mgadevelop.coba2.ui.mainpage.MainPageFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -49,6 +50,12 @@ public class WelcomeActivity extends AppCompatActivity {
         // when this activity is about to be launch we need to check if its openened before or not
 
         setContentView(R.layout.activity_welcome);
+
+        if (restorePrefData()) {
+            Intent mainActivity = new Intent(getApplicationContext(), HomePageActivity.class );
+            startActivity(mainActivity);
+            finish();
+        }
 
         // hide the action bar
 
@@ -148,9 +155,9 @@ public class WelcomeActivity extends AppCompatActivity {
 
                 Intent mainActivity = new Intent(getApplicationContext(),HomePageActivity.class);
                 startActivity(mainActivity);
-                // also we need to save a boolean value to storage so next time when the user run the app
-                // we could know that he is already checked the intro screen activity
-                // i'm going to use shared preferences to that process
+
+                savePrefsData();
+
                 finish();
 
 
@@ -183,6 +190,25 @@ public class WelcomeActivity extends AppCompatActivity {
         // setup animation
         btnGetStarted.setAnimation(btnAnim);
 
+    }
+
+    private boolean restorePrefData() {
+
+
+        SharedPreferences pref = getApplicationContext().getSharedPreferences("myPrefs",MODE_PRIVATE);
+        Boolean isIntroActivityOpnendBefore = pref.getBoolean("isIntroOpnend",false);
+        return  isIntroActivityOpnendBefore;
+
+
+
+    }
+
+    private void savePrefsData() {
+
+        SharedPreferences pref = getApplicationContext().getSharedPreferences("myPrefs",MODE_PRIVATE);
+        SharedPreferences.Editor editor = pref.edit();
+        editor.putBoolean("isIntroOpnend",true);
+        editor.commit();
 
 
     }

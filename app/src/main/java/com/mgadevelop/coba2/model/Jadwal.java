@@ -9,7 +9,7 @@ public class Jadwal {
     @SerializedName("date_for")
     public String tanggal;
     @SerializedName("fajr")
-    public String fajar;
+    public String subuh;
     @SerializedName("shurooq")
     public String syuruq;
     @SerializedName("dhuhr")
@@ -26,7 +26,11 @@ public class Jadwal {
     }
 
     public String getSubuh() {
-        return fajar;
+        return subuh;
+    }
+
+    public String getSyuruq() {
+        return syuruq;
     }
 
     public String getZuhur() {
